@@ -6,7 +6,41 @@ html {
     height: 100%;
 }
 
+/* NavBar */
+
+.navbar {
+    /* font-size: 125%; */
+    border-bottom: 2px solid lightgray;
+}
+
+.navigation {
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+}
+
+.roseLogo {
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.navName {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.35rem;
+}
+
+.navbar-nav {
+    font-size: 125%;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+/* About/Home Page */
+
 .about {
+    /* margin-top: 30px; */
     background: 
     linear-gradient(
         rgba(0, 0, 0, 0.75),
@@ -16,17 +50,42 @@ html {
     background-repeat: no-repeat;
     /* background-size:contain;
     background-position:center; */
-    background-size: 100% 100%;
+    background-size: auto 100%;
 }
 
-.navigation {
-    background-color: gray;
-    padding: 10px;
+.aboutIntro {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
 
+
 /* Portfolio Section */
+
+.portfolio {
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0,0,0,0.75)
+      ),    
+    url("../images/mcway2.jpg");
+    background-repeat: no-repeat;
+    /* background-size:contain;
+    background-position:center; */
+    background-size: auto 100%;
+}
 
 img {
     width: 100%;
+}
+
+.projectImages {
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px solid black;
+    /* border-radius: 20px; */
+}
+
+.portfolio img {
+    border-radius: 250px;
 }
