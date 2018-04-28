@@ -2,8 +2,10 @@
     box-sizing: border-box;
 }
 
-html {
+body, html {
     height: 100%;
+    margin: 0;
+    line-height: 1.8em;
 }
 
 /* NavBar */
@@ -37,8 +39,11 @@ img.roseLogo {
 }
 
 
-/* About/Home Page */
 
+
+/* About/Home Page/Index */
+
+/* no longer using this class - change and use it for contact forum page */
 .about {
     /* margin-top: 30px; */
     background: 
@@ -52,28 +57,94 @@ img.roseLogo {
 }
 
 .aboutIntro {
-    color: white;
+    color: black;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
+    font-weight: bold;
+    text-shadow: -2px 0 white, 0 2px white, 1px 0 white, 0 -1px white;
 }
 
-
-/* Profile page */
-
 .profileInfo {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .myPic {
-    width: 100%;
-    /* height: 100%; */
+    /* width: 100%; */
     border-radius: 50px;
-    /* vertical-align: middle; */
 }
 
 .profileInfo img {
     width: 75%;
 }
+
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* fixed = parallax
+    scroll = normal */
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url("../images2/dallas.jpg");
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url("../images2/ocean1.jpg");
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url("../images2/city.jpg");
+    min-height: 400px;
+}
+
+.section {
+    /* text-align: center; */
+    padding: 20px 20px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: #111111;
+    color: white;
+    padding: 20px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+.frontPageIntro {
+    margin-top: 75px;
+    /* color: black; */
+}
+
 
 
 
@@ -207,77 +278,7 @@ img.roseLogo {
 
 /* Contact page */
 
-body, html {
-    height: 100%;
-    margin: 0;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.8em;
-    color: #666666;
-}
 
-.pimg1, .pimg2, .pimg3 {
-    position: relative;
-    opacity: 0.70;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* fixed = parallax
-    scroll = normal */
-    background-attachment: fixed;
-}
-
-.pimg1 {
-    background-image: url("../images2/dallas.jpg");
-    min-height: 100%;
-}
-
-.pimg2 {
-    background-image: url("../images2/ocean1.jpg");
-    min-height: 400px;
-}
-
-.pimg3 {
-    background-image: url("../images2/city.jpg");
-    min-height: 400px;
-}
-
-.section {
-    text-align: center;
-    padding: 50px 80px;
-}
-
-.section-light {
-    background-color: #f4f4f4;
-    color: #666666;
-}
-
-.section-dark {
-    background-color: #282e34;
-    color: #ddd;
-}
-
-.ptext {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-
-.ptext .border {
-    background-color: #111111;
-    color: white;
-    padding: 20px;
-}
-
-.ptext .border.trans {
-    background-color: transparent;
-}
 
 @media(max-width: 568px) {
     .pimg1, .pimg2, .pimg3 {
@@ -288,3 +289,66 @@ body, html {
 /* @media  */
 
 
+
+/* Contact Page */
+
+/*Contact sectiom*/
+.content-header{
+    font-family: 'Oleo Script', cursive;
+    color:#fcc500;
+    font-size: 45px;
+  }
+  
+  .section-content{
+    text-align: center; 
+  
+  }
+  #contact{
+      
+      font-family: 'Teko', sans-serif;
+    padding-top: 60px;
+    width: 100%;
+    width: 100vw;
+    height: 550px;
+    background: #3a6186; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3a6186 , #89253e); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color : #fff;    
+  }
+  .contact-section{
+    padding-top: 40px;
+  }
+  .contact-section .col-md-6{
+    width: 50%;
+  }
+  
+  .form-line{
+    border-right: 1px solid #B29999;
+  }
+  
+  .form-group{
+    margin-top: 10px;
+  }
+  label{
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: normal;
+  }
+  .form-control{
+    font-size: 1.3em;
+    color: #080808;
+  }
+  textarea.form-control {
+      height: 135px;
+     /* margin-top: px;*/
+  }
+  
+  .submit{
+    font-size: 1.1em;
+    float: right;
+    width: 150px;
+    background-color: transparent;
+    color: #fff;
+  
+  }
+  
